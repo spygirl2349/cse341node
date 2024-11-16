@@ -32,13 +32,71 @@
             <li>
                 CTRL + / = comment out code <span class="code"># this is a python comment</span>
             </li>
+            <li>
+                ALT + Z for word wrap in VS Code
+            </li>
         </ul>
 
     </div>
     <div class="note-container">
-        <h2>Note 1</h2>
-        <p>This is the body of the first note.</p>
+        <h2>Node package (Express)</h2>
+        <p>Make sure that you have express installed. Install express by:</p>
+        <ul> 
+            <li>In the terminal, under the desired folder put: <span class="code">npm init --y</span></li>
+            <ul>
+                <li>
+                    This adds a package.json file to the folder
+                </li>
+            <li>
+                Paste <span class="code">npm install --save express</span> into the terminal to add the "node_modules" folder and package-lock.json file
+            </li>
+            </ul>
+        </ul>
+        <p><a href="https://codeforgeek.com/express-nodejs-tutorial/">Node and Express Tutorial</a></p>
+        <p><a href="https://www.youtube.com/watch?v=pKd0Rpw7O48&ab_channel=ProgrammingwithMosh">Build REST API with Node.js & Express - Programming with Mosh</a> - super helpful video that talks about express, ports and all that jazz. I only got 30 min in</p>
 
+        <h2>Nodemon</h2>
+        <p>Nodemon is a dev tool to help the project reload automatically after saving so you don't have deploy and non deploy over and over again.</p>
+
+
+    </div>
+    <div class="note-container">
+        <h2>Tutor Session Findings 11/14</h2>
+        <h4>MongoDB</h4>
+        <p>Packages needed to connect to MongoDB:</p>
+        <ul> 
+            <li><span class="code">npm install mongoose</span></li>
+            <li><span class="code">npm install mongodb</span></li>
+            <li><span class="code">npm install dotenv</span> I'm not sure if this has everything to do with MongoDB, but it is important to make sure that your .env file actually works and can connect with the rest your code.</li>
+        </ul>
+        <p><a href="https://www.mongodb.com/blog/post/quick-start-nodejs-mongodb-how-to-get-connected-to-your-database">Connect to a MongoDB with Node.js</a> - video is alright, but the article has great code that you can refer to and copy.</p>
+        
+        <h4>Render</h4>
+        <p>Make sure you add the .env file information in the "Environment" tab when connecting to VS Code / Github because the .env isn't synced throught Github for privacy.</p>
+        <p>Under Settings, make sure that the Start Command has a command that will match yours. For example, if you have "node server.js" there needs to be a file called server.js in your program.</p>
+
+        <h4>File Layout:</h4>
+        <div style="display: flex; flex-direction: row;">
+            <p style="padding-right: 20%">
+                ++ controller <br>
+                +++- index.js <br>
+                ++ database <br>
+                +++- index.js <br>
+                ++ node_modules <br>
+                +++- (lot's of node files and packages) <br>
+                ++ routes<br>
+                +++- contacts.js <br>
+                +++- index.js <br>
+                +- .env <br>
+                +- .gitirnore <br>
+                +- package-lock.json <br>
+                +- package.json <br>
+                +- README.md <br>
+                +- server.js 
+            </p>
+            <img src="./file_org_layout.png" alt="" style="justify-content: flex-end;">
+        </div>
+        <p>Pathway = Starts at server.js > routes > controllers > database</p>
         <h2>Note 2</h2>
         <p>This is the body of the second note.</p>
 
