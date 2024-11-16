@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>1 - CSE 341</title>
+    <title>Wk1 - CSE 341</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="note">
-        <h2>CSE 341</h2>
+        <a href="./home.html" class="hidden-a"><h2>CSE 341</h2></a>
         <p>Week 1 Notes</p>
     </div>
     <div class="note-container">
@@ -42,11 +42,13 @@
         <h2>Node package (Express)</h2>
         <p>Make sure that you have express installed. Install express by:</p>
         <ul> 
-            <li>In the terminal, under the desired folder put: <span class="code">npm init --y</span></li>
+            <li>In the terminal, under the desired folder put: <span class="code">npm init --y</span> This will give you the default settings</li>
             <ul>
+                <li>Alternatively you can put <span class="code">npm init</span> and it will have you go through all the fields to customize the set up of your project</li>
                 <li>
                     This adds a package.json file to the folder
                 </li>
+            </ul>
             <li>
                 Paste <span class="code">npm install --save express</span> into the terminal to add the "node_modules" folder and package-lock.json file
             </li>
@@ -96,18 +98,7 @@
             </p>
             <img src="./file_org_layout.png" alt="" style="justify-content: flex-end;">
         </div>
-        <p>Pathway = Starts at server.js > routes > controllers > database</p>
-        <h2>Note 2</h2>
-        <p>This is the body of the second note.</p>
-
-    </div>
-    <div class="note-container">
-        <h2>Note 1</h2>
-        <p>This is the body of the first note.</p>
-
-        <h2>Note 2</h2>
-        <p>This is the body of the second note.</p>
-
+        <p>Pathway of how the code runs = Starts at server.js > routes > controllers > database</p>
     </div>
 </body>
 </html>

@@ -38,6 +38,7 @@ body {
     line-height: 1.5;
 }
 
+/* Used for a line of code */
 .code {
     font-family: monospace;
     font-size: .9rem;
@@ -47,4 +48,16 @@ body {
     padding: 2px;
     font-size: .8rem;
 
+}
+
+/* Used for a chunk of code, must be paired with .code class */
+.chunk {
+    margin-left: 2rem;
+    padding-right: 0;
+    margin-right: 2rem;
+}
+
+.hidden-a {
+    text-decoration: none;
+    color: #EAFDF8;
 }
