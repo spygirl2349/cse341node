@@ -1,62 +1,136 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Wk2 - CSE 341</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="note">
-        <a href="./home.html" class="hidden-a"><h2>CSE 341</h2></a>
-        <p>Week 2 Notes</p>
+      <a href="./home.html" class="hidden-a"><h2>CSE 341</h2></a>
+      <p>Week 2 Notes</p>
     </div>
     <div class="note-container">
-        <h2>RESTful API - Node.js</h2>
-        <p>This is the body of the first note.</p>
-        <ul> 
-            <li>POST Method</li>
-            <ul> 
-                <li>corresponds to CREATE in CRUD</li>
-            </ul>
-            <li>GET Method</li>
-            <ul> 
-                <li>corresponds to READ in CRUD</li>
-            </ul>
-            <li>PUT Method</li>
-            <ul> 
-                <li>corresponds to UPDATE in CRUD</li>
-            </ul>
-                    <p class="code chunk">
-                        HTTP PUT http://example.com/users/123<br>
-                        HTTP PUT http://example.com/users/123/name/Ravi
-                        </p>
-            
-            <li>DELETE Method</li>
-            <ul> 
-                <li>You guessed it corresponds to DELETE in CRUD</li>
-            </ul>
-            <li>You can use POST or PUT to edit stored data. But mkae sure to stay consistent - <a href="https://stackabuse.com/building-a-rest-api-with-node-and-express/">Source</a></li>
+      <h2>RESTful API - Node.js</h2>
+      <p>This is the body of the first note.</p>
+      <ul>
+        <li>POST Method</li>
+        <ul>
+          <li>corresponds to CREATE in CRUD</li>
         </ul>
-        <h2>Note 2</h2>
-        <p>This is the body of the second note.</p>
-
-    </div>
-    <div class="note-container">
-        <h2>Note 1</h2>
-        <p>This is the body of the first note <span class = "code">#with code</span> </p>
-
-        <h2>Note 2</h2>
-        <ul> 
-            <li></li>
+        <li>GET Method</li>
+        <ul>
+          <li>corresponds to READ in CRUD</li>
         </ul>
+        <li>PUT Method</li>
+        <ul>
+          <li>corresponds to UPDATE in CRUD</li>
+        </ul>
+        <p class="code chunk">
+          HTTP PUT http://example.com/users/123<br />
+          HTTP PUT http://example.com/users/123/name/Ravi
+        </p>
 
+        <li>DELETE Method</li>
+        <ul>
+          <li>You guessed it corresponds to DELETE in CRUD</li>
+        </ul>
+        <li>
+          You can use POST or PUT to edit stored data. But mkae sure to stay
+          consistent -
+          <a
+            href="https://stackabuse.com/building-a-rest-api-with-node-and-express/"
+            >Source</a
+          >
+        </li>
+      </ul>
+      <h2>Note 2</h2>
+      <p>
+        It might be helpful to install CORS middleware to help with corss-origin
+        sharing <span class="code">npm install --save cors</span> -
+        <a
+          href="https://stackabuse.com/building-a-rest-api-with-node-and-express/"
+          >Source</a
+        >
+      </p>
     </div>
     <div class="note-container">
-        <h2>Note 1</h2>
-        <p>This is the body of the first note.</p>
+      <h2>Linter</h2>
+      <p>
+        Linters help with code formatting and syntax. If you install ES lint and
+        prettier, make sure to include the following code to add the
+        configuration needed. This is multiple packages installed, separated by
+        spaces
+      </p>
+      <p class="chunk">
+        <span class="code"
+          >npm i -D eslint prettier eslint-plugin-prettier
+          eslint-config-prettier eslint-plugin-node eslint-config-node</span
+        >
+      </p>
+      <p>
+        <a
+          href="https://dev.to/knowankit/setup-eslint-and-prettier-in-react-app-357b"
+          >Linter - ES lint and Prietter set up</a
+        >
+        - This is the actual good tutorial
+      </p>
+      <ul>
+        <li>Make sure not to add react and say Node instead of Browser</li>
+        <li>
+          <span class="code"
+            >npm install eslint-config-prettier eslint-plugin-prettier prettier
+            --save-dev</span
+          >
+        </li>
+      </ul>
 
-        <h2>Note 2</h2>
-        <p>This is the body of the second note.</p>
-
+      <h2>Note 2</h2>
+      <img src="./file_org_layout2.png" alt="" />
     </div>
-</body>
+    <div class="note-container">
+      <h2>Mongo CRUD functions</h2>
+      <ul>
+        <li>
+          C <span class="code">.insertOne()</span> - Used to Create a new item
+          in the collection
+        </li>
+        <li>
+          R <span class="code">.find()</span> - Used to Read (get) an item in
+          the collection
+        </li>
+        <li>
+          U <span class="code">.replaceOne()</span> - Used to Update an item in
+          the collection
+        </li>
+        <li>
+          D <span class="code">.deleteOne()</span> - Used to Delete an item in
+          the collection
+        </li>
+      </ul>
+      <img src="./mongo-crud.png" alt="" />
+      <p>
+        <a href="https://www.mongodb.com/resources/products/fundamentals/crud"
+          >Source</a
+        >
+      </p>
+      <h2>Swagger</h2>
+      <ul>
+        <li>
+          Swagger Autogen - generates the json file and other stuff. Use the
+          <a
+            href="https://swagger-autogen.github.io/docs/getting-started/quick-start/"
+            >Quick Start</a
+          >
+          guide to help with using this package
+        </li>
+        <li>
+          Swagger UI Express - gets the UI set up for the api-docs route -
+          <a href="https://www.npmjs.com/package/swagger-ui-express"
+            >Package Info</a
+          >
+        </li>
+      </ul>
+      <p>This is the body of the first note.</p>
+    </div>
+  </body>
 </html>
